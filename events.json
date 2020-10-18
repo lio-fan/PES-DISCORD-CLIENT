@@ -1,0 +1,8 @@
+{ 
+    "count": "1",
+    "maindescription": "Use ``$eventinfo <number>`` to learn more about a specific event.",
+    "eventonename": "**European Clubs Challenge**",
+    "eventonedescription": "Pick a club that suits your playstyle, and complete the challenge to earn GP!",
+    "eventonetype": "COM Challenge",
+    "eventoneteamtype": "Preset Teams"
+}
