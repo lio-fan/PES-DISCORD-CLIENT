@@ -10,7 +10,7 @@ class Ready extends Listener {
         this.client.user.setActivity('$help', {
             type: "PLAYING"
         });
-        console.log('[READY]')
+        console.log('[READY] ' + new Date())
     }
 }
 module.exports = Ready;

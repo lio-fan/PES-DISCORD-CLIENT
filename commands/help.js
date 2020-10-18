@@ -1,7 +1,4 @@
-const { Command } = require('discord-akairo');
-const Discord = require('discord.js')
-const db = require('quick.db')
-const fs = require('fs')
+const { Command } = require('discord-akairo'); const Discord = require('discord.js'); let responding = require('../respond.js'); let respond = responding.respond; let sendingauthor = require('../sendauthor.js'); let sendAuthor = sendingauthor.sendAuthor; const fs = require('fs'); let srcdata = fs.readFileSync('src.json'); let src = JSON.parse(srcdata); let eventsdata = fs.readFileSync('events.json'); let events = JSON.parse(eventsdata);
 class HelpCommand extends Command {
  constructor() {
   super('help', {
@@ -9,25 +6,8 @@ class HelpCommand extends Command {
   });
  }
 async exec(message, embed) { 
-  //define config, colors, and src
-  const config = require('../config.json')
-  let colors = config.colors
-  let color = colors[Math.floor(Math.random() * colors.length)];	 
-  let srcdata = fs.readFileSync('src.json');
-  let src = JSON.parse(srcdata);
-//send first help message in message channel
-message.channel.send(embed(src.helpdescription))
-//send the second help message to message author
-message.author.send(embed(src.helpdescriptiontwo))
-//define function for easy embed usage
-function embed(text) {
-  let embed = new Discord.MessageEmbed();
-  embed.setColor(color);
-  embed.setDescription('**' + message.author.username + '#' + message.author.discriminator + `**, `+ text);
-  embed.setTimestamp()
-  embed.setFooter(src.footertext, src.footerimage)
-  return embed;
-};
+respond(src.helpmessage, message)
+sendAuthor(src.helpDM, message)
  }
 }
 module.exports = HelpCommand;

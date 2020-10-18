@@ -7,7 +7,7 @@ class CommandBlockedListener extends Listener {
         });
     }
     exec(message, command, reason) {
-        console.log(`[COMMAND]: $${command.id}, user: ` + message.author.username + '#' + message.author.discriminator + ', guild: ' + message.guild.name + ', ' + message.guild.id + ', contents: ' + message.content)
+        console.log(`[COMMAND]: $${command.id}, user: ` + message.author.username + '#' + message.author.discriminator + ', guild: ' + message.guild.name + ', ' + message.guild.id + ', contents: ' + message.content + ' @ ' + new Date())
     }
 }
 

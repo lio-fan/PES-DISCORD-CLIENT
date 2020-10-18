@@ -20,9 +20,9 @@
     "commandtwodescription": "Display all current PES 2021 Mobile events.",
     "commandthreename": "$event",
     "commandthreedescription": "Display specific event information.",
-    "helpdescription": "you've been DMed with all command information.",
-    "helpdescriptiontwo": "for a full list of commands, view: https://hastebin.com/ibapuzodiv.nginx",
+    "helpmessage": "you've been DMed with all command information.",
+    "helpDM": "for a full list of commands, view: https://hastebin.com/ibapuzodiv.nginx",
     "nopacks": "There are currently no special packs.",
-    "finduseridnoexist": "this user hasn't set their in-game ID.\nTell them to use ``$setid`` to view their ID.",
+    "userhasntsetid": "this user hasn't set their in-game ID.\nTell them to use ``$setid`` to view their ID.",
     "youhaventsetid": "you haven't set your in-game ID.\nUse ``$setid`` to begin the setup process."
 }

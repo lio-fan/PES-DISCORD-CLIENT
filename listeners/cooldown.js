@@ -9,6 +9,7 @@ class cooldownListener extends Listener {
     }
 
     async exec(message, command, reason) {
+        console.log(`[COOLDOWN]: ${message.author.tag} tried to use the $${command.id} command, but was on cooldown. @ ` + new Date())
         const config = require('../config.json')
         let colors = config.colors
         let color = colors[Math.floor(Math.random() * colors.length)];	 
