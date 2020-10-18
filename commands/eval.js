@@ -4,16 +4,12 @@ class EvalCommand extends Command {
  constructor() {
   super('eval', {
    aliases: ['eval'],
-   cooldown: 10000,
-   ratelimit: 2,
-   clientPermissions: ["ADMINISTRATOR"],
-   userPermissions: ["MANAGE_GUILD"]
+   ownerOnly: true
   });
  }
  async exec(message) {
   console.log(`[COMMAND]: $eval, user: ` + message.author.username + '#' + message.author.discriminator + ', guild: ' + message.guild.name + ', ' + message.guild.id + ', contents: ' + message.content)
   let args = message.content.slice('$'.length).split(/ +/);
-  if (message.author.id !== '750519788232507534') return;
  const config = require('../config.json')
   function formatEvalResult(cmd, result, color, e = false) {
    const embed = new Discord.MessageEmbed()
