@@ -8,7 +8,6 @@ class EvalCommand extends Command {
   });
  }
  async exec(message) {
-  console.log(`[COMMAND]: $eval, user: ` + message.author.username + '#' + message.author.discriminator + ', guild: ' + message.guild.name + ', ' + message.guild.id + ', contents: ' + message.content)
   let args = message.content.slice('$'.length).split(/ +/);
  const config = require('../config.json')
   function formatEvalResult(cmd, result, color, e = false) {

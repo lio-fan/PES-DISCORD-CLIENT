@@ -10,8 +10,6 @@ class IDCommand extends Command {
  }
 
 async exec(message, embed) { 
-  //log command usage
-  console.log(`[COMMAND]: $id, user: ` + message.author.username + '#' + message.author.discriminator + ', guild: ' + message.guild.name + ', ' + message.guild.id + ', contents: ' + message.content)
   //define config, colors, and src
   const config = require('../config.json')
   let colors = config.colors
