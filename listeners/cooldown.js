@@ -15,9 +15,7 @@ class cooldownListener extends Listener {
         const fs = require('fs')
         let srcdata = fs.readFileSync('src.json');
         let src = JSON.parse(srcdata);
-
         message.channel.send(embed(`Please wait **${Math.ceil(parseInt(reason)/1000)} seconds** before running this command again.`));
-
         function embed(text) {
             let embed = new Discord.MessageEmbed();
             embed.setColor(color);
@@ -28,5 +26,4 @@ class cooldownListener extends Listener {
           };
     }
 }
-
 module.exports = cooldownListener;

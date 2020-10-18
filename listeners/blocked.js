@@ -16,7 +16,6 @@ class CommandBlockedListener extends Listener {
         let srcdata = fs.readFileSync('src.json');
         let src = JSON.parse(srcdata);
         message.channel.send(embed(`you can't use the **$${command.id}** command because you're not an **${reason}**.`))
-        //message.channel.send(`${message.author.username} was blocked from using ${command.id} because of ${reason}!`);
         function embed(text) {
             let embed = new Discord.MessageEmbed();
             embed.setColor(color);
