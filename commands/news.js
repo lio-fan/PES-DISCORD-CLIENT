@@ -8,7 +8,6 @@ class NewsCommand extends Command {
  }
 async exec(message, embed) { 
     const count = news.count
-    console.log(count)
     if(count === '0') {
         error(src.nonews, message)
         return;

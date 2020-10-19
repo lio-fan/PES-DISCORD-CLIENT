@@ -5,8 +5,10 @@
     "eventonedescription": "Pick a club that suits your playstyle, and complete the challenge to earn GP!",
     "eventonetype": "COM Challenge",
     "eventoneteamtype": "Preset Teams",
+    "eventonerewardtype": "GP",
     "eventtwoname": "**European Clubs Challenge (ONLINE)**",
     "eventtwodescription": "Pick a club that suits your playstyle, and face off against rivals from around the globe!",
     "eventtwotype": "VS User Challenge",
-    "eventtwoteamtype": "Preset Teams"
+    "eventtwoteamtype": "Preset Teams",
+    "eventtworewardtype": "GP"
 }

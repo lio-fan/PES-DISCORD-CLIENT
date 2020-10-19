@@ -7,7 +7,6 @@ class BowDrawsCommand extends Command {
  }
 async exec(message, embed) { 
     const count = bowdraws.count
-    console.log(count)
     if(count === '0') {
         error(src.nodraws, message)
     }

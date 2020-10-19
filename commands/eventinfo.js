@@ -9,14 +9,15 @@ async exec(message, embed) {
 const args = message.content.slice('$event'.length).trim().split(/ +/);
 let number = args[0]  
 const finale = events['event' + number + 'name']
-console.log(finale)
 if(finale === undefined) {
     error(src.notacurrentevent, message)
     return;
 }
 const description = events['event' + number + 'description']
 const teamtype = events['event' + number + 'teamtype']
-noTagRespond(finale + '\n\n**About This Event:**\n' + description + '\n\n**Team Type:**\n' + teamtype, message) 
+const rewards = events['event' + number + 'rewardtype']
+const opponenttype = events['event' + number + 'type']
+noTagRespond(finale + '\n\n**Reward Type:**\n' + rewards + '\n\n**Team Type:**\n' + teamtype + '\n\n**Opponent Type:**\n' + opponenttype, message) 
 
  }
 }
