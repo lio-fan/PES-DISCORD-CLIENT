@@ -26,6 +26,6 @@
     "userhasntsetid": "this user hasn't set their in-game ID.\nTell them to use ``$setid`` to view their ID.",
     "youhaventsetid": "you haven't set your in-game ID.\nUse ``$setid`` to begin the setup process.",
     "notacurrentevent": "that is not a valid event.",
-    "nodraws": "there aren't any current bow draws."
-
+    "nodraws": "there aren't any current bow draws.",
+    "nonews": "there currently isn't any konami news."
 }
