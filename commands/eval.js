@@ -1,5 +1,4 @@
-const { Command } = require('discord-akairo');
-const Discord = require('discord.js')
+const { Command } = require('discord-akairo'); const db = require('quick.db'); const Discord = require('discord.js'); let responding = require('../respond.js'); let error = responding.error; let respond = responding.respond; let sendAuthor = responding.sendAuthor; const fs = require('fs'); let srcdata = fs.readFileSync('src.json'); let src = JSON.parse(srcdata); let eventsdata = fs.readFileSync('events.json'); let events = JSON.parse(eventsdata);
 class EvalCommand extends Command {
  constructor() {
   super('eval', {

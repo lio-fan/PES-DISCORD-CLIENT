@@ -24,5 +24,8 @@
     "helpDM": "for a full list of commands, view: https://hastebin.com/ibapuzodiv.nginx",
     "nopacks": "There are currently no special packs.",
     "userhasntsetid": "this user hasn't set their in-game ID.\nTell them to use ``$setid`` to view their ID.",
-    "youhaventsetid": "you haven't set your in-game ID.\nUse ``$setid`` to begin the setup process."
+    "youhaventsetid": "you haven't set your in-game ID.\nUse ``$setid`` to begin the setup process.",
+    "notacurrentevent": "that is not a valid event.",
+    "nodraws": "there aren't any current bow draws."
+
 }
