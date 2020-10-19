@@ -1,3 +1,7 @@
 {
-    "count": "0"
+    "count": "1",
+    "drawonename": "European Box Draw",
+    "drawonedescription": "Pull all of the european players you could imagine.",
+    "drawonecost": "50000 gp",
+    "drawonetopplayers": "Neymar, Ronaldo, Messi"
 }
