@@ -13,18 +13,15 @@ async exec(message, embed) {
         error(src.nonews, message)
         return;
     }
-    const firstsetnews =  news.newsonename
-    const secondsetnews = news.newstwoname
-    const thirdsetnews = news.newsthreename
-    if(secondsetnews === undefined) {
-        noTagRespond('**' + firstsetnews + '**:\n' + news.newsonedescription, message)
+        if(news.newstwoname === undefined) {
+        noTagRespond('**' + news.newsonename + '**:\n' + news.newsonedescription, message)
         return;
     }
-    if(thirdsetnews === undefined) {
-        noTagRespond('**' + firstsetnews + '**:\n' + news.newsonedescription  + '\n\n' + '**' + secondsetnews + '**:\n' + news.newstwodescription, message)
+    if(news.newsthreename === undefined) {
+        noTagRespond('**' + news.newsonename + '**:\n' + news.newsonedescription  + '\n\n' + '**' + news.newstwoname + '**:\n' + news.newstwodescription, message)
         return;
     }
-    noTagRespond('**' + firstsetnews + '**:\n' + news.newsonedescription  + '\n\n' + '**' + secondsetnews + '**:\n' + news.newstwodescription  + '\n\n' +  '**' + thirdsetnews + '**:\n' + news.newsthreedescription, message)
+    noTagRespond('**' + news.newsonename + '**:\n' + news.newsonedescription  + '\n\n' + '**' + news.newstwoname + '**:\n' + news.newstwodescription  + '\n\n' +  '**' + news.newsthreename + '**:\n' + news.newsthreedescription, message)
 
 
  }
