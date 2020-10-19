@@ -22,8 +22,6 @@ async exec(message, embed) {
         return;
     }
     noTagRespond('**' + news.newsonename + '**:\n' + news.newsonedescription  + '\n\n' + '**' + news.newstwoname + '**:\n' + news.newstwodescription  + '\n\n' +  '**' + news.newsthreename + '**:\n' + news.newsthreedescription, message)
-
-
  }
 }
 module.exports = NewsCommand;

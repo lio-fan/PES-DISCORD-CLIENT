@@ -17,9 +17,13 @@ function sendAuthor(text, message) {
 function noTagRespond(text, message) {
     return message.channel.send({ embed : { description: text, color: color, timestamp: Date.now(), footer: { text: src.footertext, icon_url: src.footerimage } } })
 }
+function noTagSendAuthor(text, message) {
+    return message.author.send({ embed : { description: text, color: color, timestamp: Date.now(), footer: { text: src.footertext, icon_url: src.footerimage } } })
+}
 module.exports = {
     respond: respond,
     error: error,
     sendAuthor: sendAuthor,
-    noTagRespond: noTagRespond
+    noTagRespond: noTagRespond,
+    noTagSendAuthor: noTagSendAuthor
 }

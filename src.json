@@ -20,12 +20,21 @@
     "commandtwodescription": "Display all current PES 2021 Mobile events.",
     "commandthreename": "$event",
     "commandthreedescription": "Display specific event information.",
+    "commandfourname": "$setid",
+    "commandfourdescription": "Set your in-game ID.",
+    "commandfivename": "$id",
+    "commandfivedescription": "See the in-game ID of any user.",
+    "commandsixname": "$news",
+    "commandsixdescription": "See all Konami news.",
+    "commandsevenname": "$boxdraws",
+    "commandsevendescription": "View all box draw data.",
     "helpmessage": "you've been DMed with all command information.",
-    "helpDM": "for a full list of commands, view: https://hastebin.com/ibapuzodiv.nginx",
+    "helpDM": "**Command List:**",
     "nopacks": "There are currently no special packs.",
     "userhasntsetid": "this user hasn't set their in-game ID.\nTell them to use ``$setid`` to view their ID.",
     "youhaventsetid": "you haven't set your in-game ID.\nUse ``$setid`` to begin the setup process.",
     "notacurrentevent": "that is not a valid event.",
     "nodraws": "there aren't any current bow draws.",
-    "nonews": "there currently isn't any konami news."
+    "nonews": "there currently isn't any konami news.",
+    "wrongusagesetid": "**You're incorrectly using this command.**\n**Usage:**\n``$setid <id>``\n**Example:**\n``$setid 123-123-123`` put ``-`` between each 3 no. group!"
 }

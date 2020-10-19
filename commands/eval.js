@@ -3,6 +3,8 @@ class EvalCommand extends Command {
  constructor() {
   super('eval', {
    aliases: ['eval'],
+  // cooldown: 3.6e+6,
+   //ratelimit: 1,
    ownerOnly: true
   });
  }
